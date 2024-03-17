@@ -1,71 +1,103 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+/* Fonts */
+body {
+    font-family: "Times New Roman", Times, serif; /* Update with your preferred font stack */
+    font-size: 18px; /* Adjust regular text size */
+}
 
+/* Navbar Brand */
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    font-size: 2rem; /* Adjust font size as needed */
 }
 
-/* Provide sufficient contrast against white background */
+/* Links */
 a {
-  color: #0366d6;
+    color: #4b4b4b; /* Dark gray */
+    text-decoration: none; /* Remove underline */
 }
 
+/* Primary Button */
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #007bff; /* Blue */
+    border-color: #007bff;
+    border-radius: 30px; /* Rounded corners */
+    padding: 10px 20px; /* Increase padding for bigger button */
+    font-size: 1.2rem; /* Adjust font size */
 }
 
+/* Active Nav Link */
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+/* Sticky Footer */
 html {
-  font-size: 14px;
+    font-size: 18px;
 }
+
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
-/* Sticky footer styles
--------------------------------------------------- */
+/* Apply Charm font to the welcome message */
+.welcome-message {
+    font-family: 'Charm', cursive; /* Apply Charm font */
+}
+
+/* Sticky Footer */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url('../Images/college1.png');
+    background-size: cover;
+    background-position: center;
 }
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #f8f9fa; /* Light gray */
+}
+
+.content-highlight {
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    border-radius: 20px; /* Rounded corners */
+    margin: 20px auto; /* Adjust margins as needed */
+    padding: 30px; /* Increase padding for more space */
+    max-width: 800px; /* Adjust based on your layout */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+    text-align: center; /* Center the text */
 }
